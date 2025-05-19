@@ -6,6 +6,11 @@ if (window.innerWidth < 600) {
   window.location.href = 'https://jerusalemcapital.netlify.app/mobile.html';
 }
 
+var ua = navigator.userAgent.toLowerCase();
+var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
+if(isAndroid) {
+	window.location = 'https://jerusalemcapital.netlify.app/mobile.html';
+}
 
 </script>
 
