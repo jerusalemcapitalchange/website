@@ -2,7 +2,8 @@
 
 <script>
 
-if (window.innerWidth < 780) {
+const width = Math.max(document.clientWidth || 0, window.innerWidth || 0);
+  if(width < 1000) {
   window.location.href = 'https://jerusalemcapital.netlify.app/mobile.html';
 }
 
