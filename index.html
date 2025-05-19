@@ -2,16 +2,14 @@
 
 <script>
 
-if (window.innerWidth < 600) {
+if (window.innerWidth < 780) {
   window.location.href = 'https://jerusalemcapital.netlify.app/mobile.html';
 }
 
-var ua = navigator.userAgent.toLowerCase();
-var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
-if(isAndroid) {
-	// Do something!
-	// Redirect to Android-site?
-	window.location = 'https://jerusalemcapital.netlify.app/mobile.html';
+
+
+if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+  window.location = 'https://jerusalemcapital.netlify.app/mobile.html';
 }
 
 </script>
